@@ -1,0 +1,30 @@
+The first website eventshigh.com supported structured data because the on viewing the page source of that page it was
+clear that the data was stored in a json type script script which suppourts the structured data format.
+The second website inside.co.in also supported structured data for the same reason..
+The third website , naadyyogacouncil.com on the other hand did not suppourt structured data format..
+
+
+For scrapping the data of the third site we did not have to do much differnt than the other sites..
+Firstly we import all the necessary python modules like:
+1. requests: This module take sin the url of the website that we want to scrap an send the request to that website which in response
+             sends back the data in the form of html or xml for us to use..
+
+2. BeautifulSoup : Beautiful Soup is a library that makes it easy to scrape information from web pages. It sits atop an HTML or XML
+                   parser, providing Pythonic idioms for iterating, searching, and modifying the parse tree.
+
+3. pandas : Pandas is the most popular python library that is used for data analysis. It provides highly optimized performance with
+            back-end source code is purely written in C or Python . It stores the data in the form of tables which makes it easier
+            to transfer to an sql document.
+
+4. sqlalchemy : The SQLAlchemy SQL Toolkit and Object Relational Mapper is a comprehensive set of tools for working with databases
+                and Python. It has several distinct areas of functionality which can be used individually or combined together.
+
+Then we create the necessary variables with the right syntax.
+
+For the scrapping of this website we scrap the details of the events like name location and date in three list variables  name =[],location =[],date =[]
+And instead of creating one main iterator variable we create two and implement two for loops, The first loop is used to enter the name of the event in
+the name[] list
+whereas, the second loop is used to enter the locations and the dates of the events in the location[] and dates[] lists.
+
+We store the names , locations , dates of 10 events and then organize it by saving it into a pandas dataframe.
+This is how we scrap the data..
